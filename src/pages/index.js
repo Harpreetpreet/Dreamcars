@@ -3,13 +3,14 @@ import styled from 'styled-components';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
+import Banner from '../components/Banner';
 
-const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${props => props.theme.mainBrandColor} !important;
+const Section = styled.div`
+  background-image: url(/images/hero-bg.jpg);
+  background-position: top;
+  height: 40rem;
+  h2 {
+    margin-top: 12rem;
   }
 `;
 
@@ -18,13 +19,17 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
-        <section className="section">
-          <Container className="container">
-            <h1 className="title">Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-          </Container>
-        </section>
+        <Section className="section">
+          <div>
+            <h2 className="is-size-4 has-text-white has-text-weight-bold column is-3 is-offset-1">
+              FIND YOUR DREAM CAR
+            </h2>
+            <h1 className="is-size-1 has-text-white has-text-weight-bold column is-5 is-offset-1 is-size-3-mobile">
+              Porsche Cayenne S
+            </h1>
+          </div>
+        </Section>
+        <Banner />
       </Layout>
     );
   }

@@ -36,6 +36,10 @@ const Section = styled.section`
     opacity: 0.6;
     border-radius: 4px;
   }
+  button {
+    margin-top: 0.5rem;
+    background-color: ${props => props.theme.mainBrandColor};
+  }
 `;
 
 export default class Header extends React.Component {
@@ -89,19 +93,26 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
+              <div className="navbar-end">
                 <Link to="/" className="navbar-item">
                   Home
                 </Link>
                 <Link to="/about" className="navbar-item">
-                  About
+                  Cars
                 </Link>
                 <Link to="/news" className="navbar-item">
-                  News
+                  Blog
+                </Link>
+                <Link to="/contact" className="navbar-item">
+                  Pages
+                </Link>
+                <Link to="/contact" className="navbar-item">
+                  About
                 </Link>
                 <Link to="/contact" className="navbar-item">
                   Contact
                 </Link>
+                <button class="button is-normal is-size-5">Add Car</button>
               </div>
             </div>
           </nav>
