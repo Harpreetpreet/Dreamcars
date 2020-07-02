@@ -11,6 +11,10 @@ const Section = styled.div`
   height: 40rem;
   h2 {
     margin-top: 12rem;
+    font-family: initial;
+  }
+  h1 {
+    font-family: initial;
   }
 `;
 
@@ -21,10 +25,10 @@ export default class IndexPage extends React.Component {
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <Section className="section">
           <div>
-            <h2 className="is-size-4 has-text-white has-text-weight-bold column is-3 is-offset-1">
+            <h2 className="is-size-4 has-text-white has-text-weight-bold column is-3 is-offset-1 is-size-5-mobile">
               FIND YOUR DREAM CAR
             </h2>
-            <h1 className="is-size-1 has-text-white has-text-weight-bold column is-5 is-offset-1 is-size-3-mobile">
+            <h1 className="is-size-1 has-text-white has-text-weight-semibold column is-5 is-offset-1 is-size-3-mobile">
               Porsche Cayenne S
             </h1>
           </div>
