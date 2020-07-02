@@ -25,8 +25,13 @@ const Section = styled.div`
     padding: 6px 14px;
     background: #ffffff;
     border-radius: 2px;
-    left: 0;
-    top: 0;
+    margin-top: 2rem;
+  }
+  .text-price {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 45px;
   }
 `;
 
@@ -44,6 +49,9 @@ export default class IndexPage extends React.Component {
               Porsche Cayenne S
             </h1>
             <h4 className="column is-1 is-offset-1">Model 2019</h4>
+            <h2 className="text-price column is-1 is-offset-2">
+              $399<span>/Month</span>
+            </h2>
           </div>
         </Section>
         <Banner />
