@@ -16,6 +16,18 @@ const Section = styled.div`
   h1 {
     font-family: initial;
   }
+  h4 {
+    position: relative;
+    font-size: 13px;
+    color: #323232;
+    font-weight: 700;
+    display: inline-block;
+    padding: 6px 14px;
+    background: #ffffff;
+    border-radius: 2px;
+    left: 0;
+    top: 0;
+  }
 `;
 
 export default class IndexPage extends React.Component {
@@ -31,6 +43,7 @@ export default class IndexPage extends React.Component {
             <h1 className="is-size-1 has-text-white has-text-weight-semibold column is-5 is-offset-1 is-size-3-mobile">
               Porsche Cayenne S
             </h1>
+            <h4 className="column is-1 is-offset-1">Model 2019</h4>
           </div>
         </Section>
         <Banner />

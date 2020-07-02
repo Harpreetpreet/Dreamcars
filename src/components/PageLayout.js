@@ -43,6 +43,7 @@ export default function PageTemplate({ children }) {
                   h2: props => <h2 className="title is-2" {...props} />,
                   h3: props => <h3 className="title is-3" {...props} />,
                   p: props => <p className="" {...props} />,
+                  // eslint-disable-next-line prettier/prettier
                 }}
               >
                 {children}

@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint global-require: 0 */
 
 import React from 'react';
@@ -70,6 +72,7 @@ export default class Header extends React.Component {
           <nav
             className="navbar"
             role="navigation"
+            // eslint-disable-next-line prettier/prettier
             aria-label="main navigation"
           >
             <div className="navbar-brand">
@@ -87,6 +90,7 @@ export default class Header extends React.Component {
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarBasicExample"
+                // eslint-disable-next-line prettier/prettier
                 onClick={() => this.handleMobileMenu()}
               >
                 <span aria-hidden="true" />
@@ -111,10 +115,9 @@ export default class Header extends React.Component {
                 <Link to="/contact" className="navbar-item">
                   About
                 </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
-                </Link>
-                <button class="button is-normal is-size-5">Add Car</button>
+                <Link to="/contact" className="navbar-item" />
+
+                <button className="button is-normal is-size-5">Add Car</button>
               </div>
             </div>
           </nav>
